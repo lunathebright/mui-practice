@@ -1,11 +1,13 @@
 import CssBaseline from "@mui/material/CssBaseline";
+import Main from "./page/Main";
 
 function App() {
-  // return <div className="App">hello</div>;
   return (
     <>
       <CssBaseline />
-      <div className="App">Hi</div>
+      <div className="App">
+        <Main />
+      </div>
     </>
   );
 }
