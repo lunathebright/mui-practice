@@ -4,8 +4,10 @@ import {
   Badge,
   Button,
   Chip,
+  CircularProgress,
   Divider,
   Grid,
+  LinearProgress,
   Paper,
   Skeleton,
   Snackbar,
@@ -23,6 +25,14 @@ export default function Main() {
 
   return (
     <div style={{ background: "lightgrey" }}>
+      <div className="progress">
+        <CircularProgress />
+        <CircularProgress color="secondary" />
+        <CircularProgress variant="determinate" value={25} />
+        <LinearProgress />
+        <LinearProgress color="secondary" />
+        <LinearProgress variant="determinate" value={75} />
+      </div>
       <div className="skeleton">
         <Skeleton
           animation="wave"
