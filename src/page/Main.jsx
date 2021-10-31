@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Badge, Grid, Paper } from "@mui/material";
+import { Avatar, AvatarGroup, Badge, Chip, Grid, Paper } from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
 
@@ -26,6 +26,26 @@ export default function Main() {
           <Avatar src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
         </AvatarGroup>
+      </div>
+      <div className="chipBox">
+        <Chip label="outlined chip" variant="outlined" />
+        <Chip label="filled chip" />
+        <Chip
+          label="clickable"
+          onClick={() => {
+            console.log("clicked");
+          }}
+        />
+        <Chip
+          label="deletable"
+          onDelete={() => {
+            console.log("deleted");
+          }}
+        />
+        <Chip
+          avatar={<Avatar sx={{ bgcolor: "purple" }}>A</Avatar>}
+          label="avatar"
+        />
       </div>
       <div className="gridBox">
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
