@@ -2,13 +2,15 @@ import {
   Avatar,
   AvatarGroup,
   Badge,
+  Button,
   Chip,
   Divider,
   Grid,
   Paper,
+  Snackbar,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -16,8 +18,20 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function Main() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div style={{ background: "lightgrey" }}>
+      <div>
+        <Button>button</Button>
+        <Snackbar
+          open={isOpen}
+          onClose={() => {
+            setIsOpen(false);
+          }}
+          message="archived"
+        />
+      </div>
       <div className="avatarBox">
         <Avatar
           alt="Luna"
