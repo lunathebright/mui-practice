@@ -29,6 +29,7 @@ export default function Main() {
     <div style={{ background: "lightgrey" }}>
       <div>
         <Pagination count={10} color="secondary" />
+        <Pagination count={10} color="secondary" variant="outlined" />
       </div>
       <div>
         <Alert variant="outlined" severity="error">
