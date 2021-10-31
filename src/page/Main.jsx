@@ -1,4 +1,5 @@
 import {
+  Alert,
   Avatar,
   AvatarGroup,
   Badge,
@@ -25,6 +26,16 @@ export default function Main() {
 
   return (
     <div style={{ background: "lightgrey" }}>
+      <div>
+        <Alert variant="outlined" severity="error">
+          This is an error alert
+        </Alert>
+        <Alert severity="error">This is an error alert</Alert>
+        <Alert severity="success">This is an success alert</Alert>
+        <Alert variant="filled" severity="success">
+          This is an success alert
+        </Alert>
+      </div>
       <div className="progress">
         <CircularProgress />
         <CircularProgress color="secondary" />
