@@ -9,6 +9,7 @@ import {
   Divider,
   Grid,
   LinearProgress,
+  Pagination,
   Paper,
   Skeleton,
   Snackbar,
@@ -26,6 +27,9 @@ export default function Main() {
 
   return (
     <div style={{ background: "lightgrey" }}>
+      <div>
+        <Pagination count={10} color="secondary" />
+      </div>
       <div>
         <Alert variant="outlined" severity="error">
           This is an error alert
@@ -76,7 +80,7 @@ export default function Main() {
           <Avatar sx={{ bgcolor: "purple" }}>A</Avatar>
         </Badge>
         <Divider variant="inset" />
-        <AvatarGroup max={8}>
+        <AvatarGroup max={4}>
           <Avatar src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
