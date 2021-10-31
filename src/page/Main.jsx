@@ -1,4 +1,12 @@
-import { Avatar, AvatarGroup, Badge, Chip, Grid, Paper } from "@mui/material";
+import {
+  Avatar,
+  AvatarGroup,
+  Badge,
+  Chip,
+  Divider,
+  Grid,
+  Paper,
+} from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
 
@@ -19,6 +27,7 @@ export default function Main() {
         <Badge overlap="circular" badgeContent={101} color="primary" max={99}>
           <Avatar sx={{ bgcolor: "purple" }}>A</Avatar>
         </Badge>
+        <Divider variant="inset" />
         <AvatarGroup max={8}>
           <Avatar src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
@@ -29,7 +38,18 @@ export default function Main() {
       </div>
       <div className="chipBox">
         <Chip label="outlined chip" variant="outlined" />
+        <Divider variant="middle" />
+        <br />
         <Chip label="filled chip" />
+        <br />
+        <Divider variant="middle" textAlign="left">
+          left
+        </Divider>
+        <Divider variant="middle" textAlign="right">
+          right
+        </Divider>
+        <Divider variant="middle">middle</Divider>
+        <br />
         <Chip
           label="clickable"
           onClick={() => {
