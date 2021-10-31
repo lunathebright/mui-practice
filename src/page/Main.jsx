@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Grid, Paper } from "@mui/material";
+import { Avatar, AvatarGroup, Badge, Grid, Paper } from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
 
@@ -16,8 +16,10 @@ export default function Main() {
           src="https://user-images.githubusercontent.com/63533584/139567437-c1bc5e5d-4d07-4d26-915a-ba816d638c50.jpeg"
           sx={{ width: 60, height: 60 }}
         />
-        <AvatarGroup max={3}>
-          <Avatar src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" />
+        <Badge overlap="circular" badgeContent={101} color="primary" max={99}>
+          <Avatar sx={{ bgcolor: "purple" }}>A</Avatar>
+        </Badge>
+        <AvatarGroup max={8}>
           <Avatar src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
           <Avatar src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" />
