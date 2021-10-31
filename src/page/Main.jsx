@@ -7,6 +7,7 @@ import {
   Divider,
   Grid,
   Paper,
+  Skeleton,
   Snackbar,
 } from "@mui/material";
 import { styled } from "@mui/system";
@@ -22,6 +23,18 @@ export default function Main() {
 
   return (
     <div style={{ background: "lightgrey" }}>
+      <div className="skeleton">
+        <Skeleton
+          animation="wave"
+          variant="rectangular"
+          width={250}
+          height={50}
+        />
+        <br />
+        <Skeleton variant="circular" width={40} height={40} />
+        <br />
+        <Skeleton variant="text" />
+      </div>
       <div>
         <Button>button</Button>
         <Snackbar
