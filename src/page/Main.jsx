@@ -3,6 +3,7 @@ import {
   Avatar,
   AvatarGroup,
   Badge,
+  Breadcrumbs,
   Button,
   Chip,
   CircularProgress,
@@ -27,6 +28,23 @@ export default function Main() {
 
   return (
     <div style={{ background: "lightgrey" }}>
+      <Breadcrumbs>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+      </Breadcrumbs>
+      <Breadcrumbs separator="›">
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+      </Breadcrumbs>
+      <Breadcrumbs maxItems={3} separator="›">
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+        <li>eee</li>
+      </Breadcrumbs>
       <div>
         <Pagination count={10} color="secondary" />
         <Pagination count={10} color="secondary" variant="outlined" />
